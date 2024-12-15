@@ -1,0 +1,35 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  background-color: aliceblue;
+}
+
+.hover-effect {
+  transition: background-color 0.3s; 
+}
+
+.hover-effect:hover {
+  background-color: rgba(66, 165, 245, 0.15);
+}
+
+.hover-effect button {
+  opacity: 0;
+  visibility: hidden; /* Скрыть элемент */
+  transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+.hover-effect:hover button {
+  opacity: 1; 
+  visibility: visible; 
+}
+
